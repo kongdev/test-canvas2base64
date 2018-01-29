@@ -391,7 +391,8 @@ tr.selected {
 <br/>
 <input type="button" id="btnSave" value="Save PNG"/>
 
-<div id="img-out"></div>
+<div id="canvas-out"></div>
+<img id="imgbase64-out" src="" />
 <script>
 $(function() { 
     $("#btnSave").click(function() { 
@@ -402,8 +403,9 @@ $(function() {
 
                 // Convert and download as image 
                 //Canvas2Image.saveAsPNG(canvas);
-                console.log(canvas.toDataURL());
-                $("#img-out").append(canvas);
+                //console.log(canvas.toDataURL());
+                $("#canvas-out").append(canvas);
+				$('#imgbase64-out').attr('src',canvas.toDataURL())
                 // Clean up 
                 //document.body.removeChild(canvas);
             }
