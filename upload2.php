@@ -10,7 +10,7 @@ $upload = $path . $filename;
 
 file_put_contents($upload, $image);
 
-
+echo json_encode(['status'=>$filename]);
 
 function get_extension_canvas(&$image)
 {

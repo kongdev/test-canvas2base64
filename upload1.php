@@ -29,7 +29,7 @@
                   
                   success:function(data){
                         console.log(data);
-						alert('ok');
+						$('#rs').val(data.status);
                   },
                   
             });
@@ -46,4 +46,6 @@
   
 
    <a href="javascript:void(0);" id="btn-upload">upload</a>
+
+   <input type="text" id="rs" />
 </form>
