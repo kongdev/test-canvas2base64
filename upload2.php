@@ -2,7 +2,7 @@
 $image = $_POST['upload1'];
 $time = (microtime(true) * 10000);
 $type = get_extension_canvas($image);
-$path = "./upload";
+$path = "./upload/";
 $filename = "{$time}.{$type}";
 
 
