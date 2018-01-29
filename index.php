@@ -390,9 +390,9 @@ tr.selected {
 </span>
 <br/>
 <input type="button" id="btnSave" value="Save PNG"/>
-canvas
+<p>canvas</p>
 <div id="canvas-out"></div>
-imgbase64
+<p>imgbase64</p>
 <img id="imgbase64-out" src="" />
 <script>
 $(function() { 
